@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produktnavn - Min Nettbutikk</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="search-bar">
+      <input type="text" placeholder="Søk...">
+      <button type="submit">Søk</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="#popular-products">Produkter</a></li>
+        <li><a href="#popular-categories">Kategorier</a></li>
+        <li><a href="#contact">Kontakt oss</a></li>
+      </ul>
+      <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+      <a href="checkout.html" class="cart-icon"><img src="img/cart-icon.png" alt="Handlekurv"></a>
+    </nav>
+  </header>
+  
+
+  <nav aria-label="Brødsmulesti">
+    <ol class="breadcrumb">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="#popular-categories">Kategori</a></li>
+      <li aria-current="page">Produktnavn</li>
+    </ol>
+  </nav>
+
+ 
+  <main>
+    <div class="product-details">
+      <div class="product-images">
+        <img src="img/produkt-hoved.jpg" alt="Hovedbilde av Produktnavn">
+        <div class="thumbnails">
+          <img src="img/produkt1.jpg" alt="Bilde 1">
+          <img src="img/produkt2.jpg" alt="Bilde 2">
+          <img src="img/produkt3.jpg" alt="Bilde 3">
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h1>Produktnavn</h1>
+        <a href="#" class="brand-link">Merke</a>
+        <p class="price">499 NOK</p>
+        <p class="color">Farge: Rød</p>
+        <label for="size">Størrelse:</label>
+        <select id="size" name="size">
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+        </select>
+        <button class="add-to-cart">Legg i handlekurv</button>
+      </div>
+    </div>
+
+
+    <section class="related-products">
+      <h2>Lignende produkter</h2>
+      <div class="product-cards">
+        <div class="product-card">
+          <img src="img/produkt4.jpg" alt="Produkt 4">
+          <h3>Produktnavn 4</h3>
+          <p>Pris: 999 NOK</p>
+        </div>
+      </div>
+      <a href="#" class="see-more">Se flere lignende produkter <span>&rarr;</span></a>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="footer-section logo-ingress">
+      <img src="img/logo.png" alt="Logo">
+      <p>Din slagord eller informasjon om virksomheten.</p>
+    </div>
+    <div class="footer-section contact">
+      <h3>Kontakt</h3>
+      <p>Adresse: Gatexxxx 211654, 9431 Fredrikstad</p>
+      <p>Telefon: 8439234432432432</p>
+      <p>E-post: bliblaglad@gmail.no</p>
+    </div>
+    <div class="footer-section shortcuts">
+      <h3>Snarveier</h3>
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="#popular-products">Produkter</a></li>
+        <li><a href="#popular-categories">Kategorier</a></li>
+        <li><a href="#contact">Kontakt oss</a></li>
+      </ul>
+    </div>
+    <div class="footer-section social-media">
+      <h3>Sosiale medier</h3>
+      <ul>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forside - Min Nettbutikk</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="search-bar">
+      <input type="text" placeholder="Søk...">
+      <button type="submit">Søk</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="#popular-products">Produkter</a></li>
+        <li><a href="#popular-categories">Kategorier</a></li>
+        <li><a href="#contact">Kontakt oss</a></li>
+      </ul>
+      <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+      <a href="checkout.html" class="cart-icon"><img src="img/cart-icon.png" alt="Handlekurv"></a>
+    </nav>
+  </header>
+  
+   <section class="banner slider">
+    <div class="slider-frame active">
+      <h1>Slide 1 Overskrift</h1>
+      <p>Slide 1 Ingress</p>
+      <a href="#" class="slider-button">Les mer</a>
+    </div>
+    <div class="slider-frame">
+      <h1>Slide 2 Overskrift</h1>
+      <p>Slide 2 Ingress</p>
+      <a href="#" class="slider-button">Les mer</a>
+    </div>
+    <div class="slider-frame">
+      <h1>Slide 3 Overskrift</h1>
+      <p>Slide 3 Ingress</p>
+      <a href="#" class="slider-button">Les mer</a>
+    </div>
+    <button class="slider-prev">&larr;</button>
+    <button class="slider-next">&rarr;</button>
+  </section>
+
+
+
+  <main>
+    
+    <section class="banner">
+      <h1>Velkommen til Vår Nettbutikk</h1>
+      <p>Den aller beste destinasjon for "kvalitetsprodukter".</p>
+      <a href="#popular-products" class="banner-button">Utforsk Produkter</a>
+    </section>
+
+    
+    <section id="popular-products">
+      <h2>Våre mest populære produkter</h2>
+      <p>Utforsk de produktene våre kunder elsker mest.</p>
+      <div class="product-filters">
+        <button>Alle</button>
+        <button>Kategori 1</button>
+        <button>Kategori 2</button>
+      </div>
+      <div class="product-cards">
+        
+        <div class="product-card">
+            <img src="img/produkt1.jpg" alt="Produkt 1">
+            <h3>Produktnavn 1</h3>
+            <p>Pris: 299 NOK</p>
+            <div class="reviews">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span>(10 anmeldelser)</span>
+            </div>
+            <button class="add-to-cart">Legg i handlekurv</button>
+        </div>
+        
+    </div>
+</section>
+
+    
+    <section id="popular-categories">
+      <h2>Våre mest populære kategorier</h2>
+      <p>Finn produkter innenfor dine favorittkategorier.</p>
+      <div class="category-cards">
+        <div class="category-card" style="background-image: url('img/kategori1.jpg');">
+          <h3>Kategori 1</h3>
+        </div>
+       
+      </div>
+    </section>
+
+    
+    <section class="reviews">
+      <h2>Anmeldelser</h2>
+      <div class="review-cards">
+        <div class="review-card">
+          <img src="img/anmeldelse1.jpg" alt="Anmelder 1">
+          <h3>Fantastisk produkt!</h3>
+          <p>Dette produktet har virkelig endret hverdagen min for det bedre!</p>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  
+  <footer>
+    <div class="footer-section logo-ingress">
+      <img src="img/logo.png" alt="Logo">
+      <p>Mitt slagord eller informasjon om virksomheten.</p>
+    </div>
+    <div class="footer-section contact">
+        <h3>Kontakt</h3>
+        <p>Adresse: Gatexxxx 211654, 9431 Fredrikstad</p>
+        <p>Telefon: 8439234432432432</p>
+        <p>E-post: bliblaglad@gmail.no</p>
+    </div>
+    <div class="footer-section shortcuts">
+      <h3>Snarveier</h3>
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="#popular-products">Produkter</a></li>
+        <li><a href="#popular-categories">Kategorier</a></li>
+        <li><a href="#contact">Kontakt oss</a></li>
+      </ul>
+    </div>
+    <div class="footer-section social-media">
+      <h3>Sosiale medier</h3>
+      <ul>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+  <script>
+    const frames = document.querySelectorAll('.slider-frame');
+    const prevBtn = document.querySelector('.slider-prev');
+    const nextBtn = document.querySelector('.slider-next');
+    let current = 0;
+
+    function showSlide(index) {
+      frames.forEach((frame, i) => {
+        frame.classList.toggle('active', i === index);
+      });
+    }
+
+    prevBtn.addEventListener('click', () => {
+      current = (current - 1 + frames.length) % frames.length;
+      showSlide(current);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      current = (current + 1) % frames.length;
+      showSlide(current);
+    });
+
+    
+    setInterval(() => {
+      current = (current + 1) % frames.length;
+      showSlide(current);
+    }, 5000);
+
+    
+    showSlide(current);
+  </script>
+
+
+
+</body>
+</html>
