@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-<html lang="no">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kasse - Min Nettbutikk</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header>
-    <div class="search-bar">
-      <input type="text" placeholder="Søk...">
-      <button type="submit">Søk</button>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="#popular-products">Produkter</a></li>
-        <li><a href="#popular-categories">Kategorier</a></li>
-        <li><a href="#contact">Kontakt oss</a></li>
-      </ul>
-      <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
-      <a href="checkout.html" class="cart-icon"><img src="img/cart-icon.png" alt="Handlekurv"></a>
-    </nav>
-  </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forside - Min Nettbutikk</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="search-bar">
+        <input type="text" placeholder="søk her" aria-label="Søk her">
+        <button aria-label="Søk">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <nav class="main-nav">
+        <!-- Container for text links -->
+        <div class="text-container">
+          <a href="index.html">
+            <span class="nav-text">Hjem</span>
+          </a>
+          <a href="#">
+            <span class="nav-text">Produkter</span>
+          </a>
+          <span class="logo">Logo</span>
+          <a href="#">
+            <span class="nav-text">Kategorier</span>
+          </a>
+          <a href="#">
+            <span class="nav-text">Kontakt oss</span>
+          </a>
+        </div>
+      
+        <!-- Container for icons -->
+        <div class="icon-container">
+          <a href="#"><i class="fas fa-user"></i></a>
+          <a href="#"><i class="fas fa-heart"></i></a>
+          <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </nav>
+    </header>
   
 
   <main>
@@ -115,34 +133,34 @@
     </div>
   </main>
 
-  <footer>
-    <div class="footer-section logo-ingress">
-      <img src="img/logo.png" alt="Logo">
-      <p>slagord eller informasjon om virksomheten.</p>
-    </div>
-    <div class="footer-section contact">
-        <h3>Kontakt</h3>
-        <p>Adresse: Gatexxxx 211654, 9431 Fredrikstad</p>
-        <p>Telefon: 8439234432432432</p>
-        <p>E-post: bliblaglad@gmail.no</p>
-    </div>
-    <div class="footer-section shortcuts">
-      <h3>Snarveier</h3>
-      <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="#popular-products">Produkter</a></li>
-        <li><a href="#popular-categories">Kategorier</a></li>
-        <li><a href="#contact">Kontakt oss</a></li>
-      </ul>
-    </div>
-    <div class="footer-section social-media">
-      <h3>Sosiale medier</h3>
-      <ul>
-        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-        <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
-      </ul>
+  <footer class="container">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>Logo</h2>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+      </div>
+      <div class="footer-contact">
+        <h3>KONTAKT</h3>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+        <p><i class="fas fa-phone"></i> <strong>Telefon:</strong> 69 60 80 00</p>
+        <p><i class="fas fa-envelope"></i> <strong>E-post:</strong> halden@hiof.no</p>
+        <p><i class="fas fa-clock"></i> <strong>Åpningstider:</strong> Stenger 15:00</p>
+      </div>
+      <div class="footer-links">
+        <h3>SNARVEIER</h3>
+        <ul>
+          <li><a href="#">Produkter</a></li>
+          <li><a href="#">Kategorier</a></li>
+          <li><a href="#">Kontakt oss</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>SOSIALE MEDIER</h3>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+      </div>
     </div>
   </footer>
   

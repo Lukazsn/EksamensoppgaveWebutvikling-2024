@@ -1,108 +1,187 @@
 <!DOCTYPE html>
-<html lang="no">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Produktnavn - Min Nettbutikk</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header>
-    <div class="search-bar">
-      <input type="text" placeholder="Søk...">
-      <button type="submit">Søk</button>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="#popular-products">Produkter</a></li>
-        <li><a href="#popular-categories">Kategorier</a></li>
-        <li><a href="#contact">Kontakt oss</a></li>
-      </ul>
-      <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
-      <a href="checkout.html" class="cart-icon"><img src="img/cart-icon.png" alt="Handlekurv"></a>
-    </nav>
-  </header>
-  
-
-  <nav aria-label="Brødsmulesti">
-    <ol class="breadcrumb">
-      <li><a href="index.html">Hjem</a></li>
-      <li><a href="#popular-categories">Kategori</a></li>
-      <li aria-current="page">Produktnavn</li>
-    </ol>
-  </nav>
-
- 
-  <main>
-    <div class="product-details">
-      <div class="product-images">
-        <img src="img/produkt-hoved.jpg" alt="Hovedbilde av Produktnavn">
-        <div class="thumbnails">
-          <img src="img/produkt1.jpg" alt="Bilde 1">
-          <img src="img/produkt2.jpg" alt="Bilde 2">
-          <img src="img/produkt3.jpg" alt="Bilde 3">
-        </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forside - Min Nettbutikk</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="search-bar">
+        <input type="text" placeholder="søk her" aria-label="Søk her">
+        <button aria-label="Søk">
+          <i class="fas fa-search"></i>
+        </button>
       </div>
+      <nav class="main-nav">
+     
+        <div class="text-container">
+          <a href="index.html">
+            <span class="nav-text">Hjem</span>
+          </a>
+          <a href="#våre-mest-populære-produkter">
+            <span class="nav-text">Produkter</span>
+          </a>
+          <span class="logo"><a href="index.html">Logo</a></span>
+          <a href="#våre-mest-populære-kategorier">
+            <span class="nav-text">Kategorier</span>
+          </a>
+          <a href="#footer">
+            <span class="nav-text">Kontakt oss</span>
+          </a>
+        </div>
+      
+        <div class="icon-container">
+          <a href="#"><i class="fas fa-user"></i></a>
+          <a href="#"><i class="fas fa-heart"></i></a>
+          <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </nav>
+    </header>
+  
+<main class="container">
 
+  <div class="product-page">
+    <nav aria-label="breadcrumb" class="breadcrumb-container">
+      <ol class="breadcrumb">
+        <li><a href="#">Hjem > </a></li>
+        <li><a href="#">Kategori > </a></li>
+        <li aria-current="page">Produktnavn</li>
+      </ol>
+    </nav>
+  
+    <div class="product-layout">
+      <div class="product-thumbnails">
+        <img src="img/il_fullxfull.3466901473_h4oc.jpg" alt="Produktbilde 1">
+        <img src="img/il_fullxfull.3466901473_h4oc.jpg" alt="Produktbilde 2">
+        <img src="img/il_fullxfull.3466901473_h4oc.jpg" alt="Produktbilde 3">
+      </div>
+  
+      
+      <div class="main-product-image">
+        <img src="img/il_fullxfull.3466901473_h4oc.jpg" alt="Hovedbilde">
+      </div>
+  
+      
       <div class="product-info">
         <h1>Produktnavn</h1>
-        <a href="#" class="brand-link">Merke</a>
-        <p class="price">499 NOK</p>
-        <p class="color">Farge: Rød</p>
-        <label for="size">Størrelse:</label>
-        <select id="size" name="size">
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
+        <p class="brand">MERKENAVN</p>
+        <p class="price">5 195 kr inkl. mva.</p>
+        <p class="color">Farge: <span class="color-value">Beige</span></p>
+  
+        <label for="size" class="size-label">Velg størrelse</label>
+        <select id="size" class="size-dropdown">
+          <option>Velg størrelse</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
         </select>
+  
         <button class="add-to-cart">Legg i handlekurv</button>
+        <button class="wishlist"><i class="fas fa-heart"></i></button>
+  
+        <ul class="product-details">
+          <li><span>Materiale og vedlikehold</span> <i class="fas fa-plus"></i></li>
+          <li><span>Produktdetaljer</span> <i class="fas fa-plus"></i></li>
+          <li><span>Størrelsestabell</span> <i class="fas fa-plus"></i></li>
+          <li><span>Anmeldelser</span> 32</li>
+        </ul>
       </div>
     </div>
+  </div>
 
-
-    <section class="related-products">
+  <div class="similar-products">
+    <div class="similar-products-header">
       <h2>Lignende produkter</h2>
-      <div class="product-cards">
-        <div class="product-card">
-          <img src="img/produkt4.jpg" alt="Produkt 4">
-          <h3>Produktnavn 4</h3>
-          <p>Pris: 999 NOK</p>
+      <a href="#" class="see-more">Se flere lignende produkter →</a>
+    </div>
+    <div class="product-list">
+      <div class="product-cardv2">
+        <div class="product-image">
+          <img src="img/232-400x400.jpg" alt="Product image">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3 class="product-title">Product name</h3>
+        <p class="product-price">Kr 1999</p>
+        <div class="product-rating">
+          <span>★★★★★</span>
+          <p>842 Reviews</p>
         </div>
       </div>
-      <a href="#" class="see-more">Se flere lignende produkter <span>&rarr;</span></a>
-    </section>
+      <div class="product-cardv2">
+        <div class="product-image">
+          <img src="img/232-400x400.jpg" alt="Product image">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3 class="product-title">Product name</h3>
+        <p class="product-price">Kr 1999</p>
+        <div class="product-rating">
+          <span>★★★★★</span>
+          <p>842 Reviews</p>
+        </div>
+      </div>
+      <div class="product-cardv2">
+        <div class="product-image">
+          <img src="img/232-400x400.jpg" alt="Product image">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3 class="product-title">Product name</h3>
+        <p class="product-price">Kr 1999</p>
+        <div class="product-rating">
+          <span>★★★★★</span>
+          <p>842 Reviews</p>
+        </div>
+      </div>
+      <div class="product-cardv2">
+        <div class="product-image">
+          <img src="img/232-400x400.jpg" alt="Product image">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3 class="product-title">Product name</h3>
+        <p class="product-price">Kr 1999</p>
+        <div class="product-rating">
+          <span>★★★★★</span>
+          <p>842 Reviews</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   </main>
 
 
-  <footer>
-    <div class="footer-section logo-ingress">
-      <img src="img/logo.png" alt="Logo">
-      <p>Din slagord eller informasjon om virksomheten.</p>
-    </div>
-    <div class="footer-section contact">
-      <h3>Kontakt</h3>
-      <p>Adresse: Gatexxxx 211654, 9431 Fredrikstad</p>
-      <p>Telefon: 8439234432432432</p>
-      <p>E-post: bliblaglad@gmail.no</p>
-    </div>
-    <div class="footer-section shortcuts">
-      <h3>Snarveier</h3>
-      <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="#popular-products">Produkter</a></li>
-        <li><a href="#popular-categories">Kategorier</a></li>
-        <li><a href="#contact">Kontakt oss</a></li>
-      </ul>
-    </div>
-    <div class="footer-section social-media">
-      <h3>Sosiale medier</h3>
-      <ul>
-        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-        <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
-      </ul>
+  <footer class="container">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>Logo</h2>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+      </div>
+      <div class="footer-contact">
+        <h3>KONTAKT</h3>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+        <p><i class="fas fa-phone"></i> <strong>Telefon:</strong> 69 60 80 00</p>
+        <p><i class="fas fa-envelope"></i> <strong>E-post:</strong> halden@hiof.no</p>
+        <p><i class="fas fa-clock"></i> <strong>Åpningstider:</strong> Stenger 15:00</p>
+      </div>
+      <div class="footer-links">
+        <h3>SNARVEIER</h3>
+        <ul>
+          <li><a href="#">Produkter</a></li>
+          <li><a href="#">Kategorier</a></li>
+          <li><a href="#">Kontakt oss</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>SOSIALE MEDIER</h3>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+      </div>
     </div>
   </footer>
   

@@ -1,44 +1,51 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Forside - Min Nettbutikk</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <header>
+  <header class="container">
     <div class="search-bar">
-      <input type="text" placeholder="Søk...">
-      <button type="submit">Søk</button>
+      <input type="text" placeholder="søk her" aria-label="Søk her">
+      <button aria-label="Søk">
+        <i class="fas fa-search"></i>
+      </button>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="#popular-products">Produkter</a></li>
-        <li><a href="#popular-categories">Kategorier</a></li>
-        <li><a href="#contact">Kontakt oss</a></li>
-      </ul>
-      <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
-      <a href="checkout.html" class="cart-icon"><img src="img/cart-icon.png" alt="Handlekurv"></a>
+    <nav class="main-nav">
+   
+      <div class="text-container">
+        <a href="index.html">
+          <span class="nav-text">Hjem</span>
+        </a>
+        <a href="#våre-mest-populære-produkter">
+          <span class="nav-text">Produkter</span>
+        </a>
+        <span class="logo"><a href="index.html">Logo</a></span>
+        <a href="#våre-mest-populære-kategorier">
+          <span class="nav-text">Kategorier</span>
+        </a>
+        <a href="#footer">
+          <span class="nav-text">Kontakt oss</span>
+        </a>
+      </div>
+    
+      <div class="icon-container">
+        <a href="#"><i class="fas fa-user"></i></a>
+        <a href="#"><i class="fas fa-heart"></i></a>
+        <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+      </div>
     </nav>
   </header>
   
-   <section class="banner slider">
+  <section class="banner slider container">
     <div class="slider-frame active">
-      <h1>Slide 1 Overskrift</h1>
-      <p>Slide 1 Ingress</p>
-      <a href="#" class="slider-button">Les mer</a>
-    </div>
-    <div class="slider-frame">
-      <h1>Slide 2 Overskrift</h1>
-      <p>Slide 2 Ingress</p>
-      <a href="#" class="slider-button">Les mer</a>
-    </div>
-    <div class="slider-frame">
-      <h1>Slide 3 Overskrift</h1>
-      <p>Slide 3 Ingress</p>
-      <a href="#" class="slider-button">Les mer</a>
+      <h1>Et harum quidem rerum facilis est et expedita distinctio.</h1>
+      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
+      <a href="#" class="slider-button">LES MER</a>
     </div>
     <button class="slider-prev">&larr;</button>
     <button class="slider-next">&rarr;</button>
@@ -46,128 +53,211 @@
 
 
 
-  <main>
+  <main class="container">
     
-    <section class="banner">
-      <h1>Velkommen til Vår Nettbutikk</h1>
-      <p>Den aller beste destinasjon for "kvalitetsprodukter".</p>
-      <a href="#popular-products" class="banner-button">Utforsk Produkter</a>
+    <section id="våre-mest-populære-produkter" class="banner2">
+      <h1>Våre mest populære produkter</h1>
+      <p>Oppdag det beste av det beste</p>
     </section>
 
-    
-    <section id="popular-products">
-      <h2>Våre mest populære produkter</h2>
-      <p>Utforsk de produktene våre kunder elsker mest.</p>
+      
       <div class="product-filters">
-        <button>Alle</button>
-        <button>Kategori 1</button>
-        <button>Kategori 2</button>
+        <button>New Product</button>
+        <button>Special Price</button>
+        <button>Best Sellers</button>
       </div>
-      <div class="product-cards">
-        
-        <div class="product-card">
-            <img src="img/produkt1.jpg" alt="Produkt 1">
-            <h3>Produktnavn 1</h3>
-            <p>Pris: 299 NOK</p>
-            <div class="reviews">
-                <span class="stars">⭐⭐⭐⭐⭐</span>
-                <span>(10 anmeldelser)</span>
-            </div>
-            <button class="add-to-cart">Legg i handlekurv</button>
-        </div>
-        
-    </div>
-</section>
 
-    
-    <section id="popular-categories">
-      <h2>Våre mest populære kategorier</h2>
-      <p>Finn produkter innenfor dine favorittkategorier.</p>
-      <div class="category-cards">
-        <div class="category-card" style="background-image: url('img/kategori1.jpg');">
-          <h3>Kategori 1</h3>
+
+      
+      <div class="product-cards">
+        <div class="product-card">
+          <img src="img/test.jpg" alt="Product Image">
+          <h3>Product name</h3>
+          <p>Kr 1999</p>
+          <div class="reviews">
+            <span>⭐️⭐️⭐️⭐️☆</span>
+            <span>842 Reviews</span>
+          </div>
         </div>
-       
+        <div class="product-card">
+          <img src="img/test.jpg" alt="Product Image">
+          <h3>Product name</h3>
+          <p>Kr 1999</p>
+          <div class="reviews">
+            <span>⭐️⭐️⭐️⭐️☆</span>
+            <span>842 Reviews</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img/test.jpg" alt="Product Image">
+          <h3>Product name</h3>
+          <p>Kr 1999</p>
+          <div class="reviews">
+            <span>⭐️⭐️⭐️⭐️☆</span>
+            <span>842 Reviews</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img/test.jpg" alt="Product Image">
+          <h3>Product name</h3>
+          <p>Kr 1999</p>
+          <div class="reviews">
+            <span>⭐️⭐️⭐️⭐️☆</span>
+            <span>842 Reviews</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img/test.jpg" alt="Product Image">
+          <h3>Product name</h3>
+          <p>Kr 1999</p>
+          <div class="reviews">
+            <span>⭐️⭐️⭐️⭐️☆</span>
+            <span>842 Reviews</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img/test.jpg" alt="Product Image">
+          <h3>Product name</h3>
+          <p>Kr 1999</p>
+          <div class="reviews">
+            <span>⭐️⭐️⭐️⭐️☆</span>
+            <span>842 Reviews</span>
+          </div>
+        </div>
       </div>
     </section>
 
     
-    <section class="reviews">
+    <section id="våre-mest-populære-kategorier" class="popular-categories">
+      <h1>Våre mest populære kategorier</h1>
+      <p>Oppdag det beste av det beste</p>
+    </section>
+
+    <div class="categories-container">
+      <div class="category" style="background-image: url('img/805-400x300.jpg');">
+        <span class="category-text">CATEGORY 1</span>
+      </div>
+      <div class="category" style="background-image: url('img/242-400x300.jpg');">
+        <span class="category-text">CATEGORY 2</span>
+      </div>
+      <div class="category category-tall" style="background-image: url('img/33-400x300.jpg');">
+        <span class="category-text">CATEGORY 3</span>
+      </div>
+      <div class="category category-wide" style="background-image: url('img/962-1200x800.jpg')">
+        <span class="category-text">CATEGORY 4</span>
+      </div>
+      <div class="category" style="background-image: url('img/152-400x400.jpg');">
+        <span class="category-text">CATEGORY 5</span>
+      </div>
+    </div>
+    
+    <section class="reviewsv2">
       <h2>Anmeldelser</h2>
       <div class="review-cards">
         <div class="review-card">
-          <img src="img/anmeldelse1.jpg" alt="Anmelder 1">
-          <h3>Fantastisk produkt!</h3>
-          <p>Dette produktet har virkelig endret hverdagen min for det bedre!</p>
+          <img src="img/limited-edition-black-labrador-retriever-head-study-print-rmle74-478-p.jpg" alt="Anmelder 1" class="review-avatar">
+          <h3>Rober Labrador</h3>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+          </div>
+          <p>
+            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+          </p>
         </div>
-        
+        <div class="review-card">
+          <img src="img/limited-edition-black-labrador-retriever-head-study-print-rmle74-478-p.jpg" alt="Anmelder 2" class="review-avatar">
+          <h3>Rober Labrador</h3>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+          </div>
+          <p>
+            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+          </p>
+        </div>
+        <div class="review-card">
+          <img src="img/limited-edition-black-labrador-retriever-head-study-print-rmle74-478-p.jpg" alt="Anmelder 3" class="review-avatar">
+          <h3>Rober Labrador</h3>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+          </div>
+          <p>
+            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+          </p>
+        </div>
+        <div class="review-card">
+          <img src="img/limited-edition-black-labrador-retriever-head-study-print-rmle74-478-p.jpg" alt="Anmelder 4" class="review-avatar">
+          <h3>Rober Labrador</h3>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+          </div>
+          <p>
+            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+          </p>
+        </div>
       </div>
     </section>
   </main>
 
+
   
-  <footer>
-    <div class="footer-section logo-ingress">
-      <img src="img/logo.png" alt="Logo">
-      <p>Mitt slagord eller informasjon om virksomheten.</p>
-    </div>
-    <div class="footer-section contact">
-        <h3>Kontakt</h3>
-        <p>Adresse: Gatexxxx 211654, 9431 Fredrikstad</p>
-        <p>Telefon: 8439234432432432</p>
-        <p>E-post: bliblaglad@gmail.no</p>
-    </div>
-    <div class="footer-section shortcuts">
-      <h3>Snarveier</h3>
-      <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="#popular-products">Produkter</a></li>
-        <li><a href="#popular-categories">Kategorier</a></li>
-        <li><a href="#contact">Kontakt oss</a></li>
-      </ul>
-    </div>
-    <div class="footer-section social-media">
-      <h3>Sosiale medier</h3>
-      <ul>
-        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-        <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
-      </ul>
+  <footer id="footer" class="container">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>Logo</h2>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+      </div>
+      <div class="footer-contact">
+        <h3>KONTAKT</h3>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+        <p><i class="fas fa-phone"></i> <strong>Telefon:</strong> 69 60 80 00</p>
+        <p><i class="fas fa-envelope"></i> <strong>E-post:</strong> halden@hiof.no</p>
+        <p><i class="fas fa-clock"></i> <strong>Åpningstider:</strong> Stenger 15:00</p>
+      </div>
+      <div class="footer-links">
+        <h3>SNARVEIER</h3>
+        <ul>
+          <li><a href="#">Produkter</a></li>
+          <li><a href="#">Kategorier</a></li>
+          <li><a href="#">Kontakt oss</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>SOSIALE MEDIER</h3>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+      </div>
     </div>
   </footer>
+  
   
   <script>
     const frames = document.querySelectorAll('.slider-frame');
     const prevBtn = document.querySelector('.slider-prev');
     const nextBtn = document.querySelector('.slider-next');
     let current = 0;
-
+  
     function showSlide(index) {
       frames.forEach((frame, i) => {
         frame.classList.toggle('active', i === index);
       });
     }
-
+  
     prevBtn.addEventListener('click', () => {
       current = (current - 1 + frames.length) % frames.length;
       showSlide(current);
     });
-
+  
     nextBtn.addEventListener('click', () => {
       current = (current + 1) % frames.length;
       showSlide(current);
     });
-
-    
-    setInterval(() => {
-      current = (current + 1) % frames.length;
-      showSlide(current);
-    }, 5000);
-
+  
     
     showSlide(current);
   </script>
+  
 
 
 
