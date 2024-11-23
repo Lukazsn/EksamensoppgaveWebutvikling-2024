@@ -114,7 +114,7 @@ header {
   justify-content: flex-end; 
   align-items: center; 
   padding: 0 20px;
-  background: url('../img/774-1200x800.jpg') center/cover no-repeat;
+  background: url('../img/218-1200x800.jpg') center/cover no-repeat;
   border-radius: 70px;
   position: relative;
   width: 100%;
@@ -822,10 +822,10 @@ h1 {
 .user-info-section {
   max-width: 800px;
   margin: 40px auto;
-  background: #fff; /* White background */
+  background: #fff; 
   padding: 20px;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   font-family: Arial, sans-serif;
 }
 
@@ -982,7 +982,7 @@ h1 {
   font-weight: bold;
   margin: 5px 0;
   color: #555;
-  display: block; /* This makes it take up the full line */
+  display: block; 
  
   }
 
