@@ -77,12 +77,65 @@
             <button class="add-to-cart">Legg i handlekurv</button>
             <button class="wishlist"><i class="fas fa-heart"></i></button>
     
-            <ul class="product-details">
-              <li><span>Materiale og vedlikehold</span> <i class="fas fa-plus"></i></li>
-              <li><span>Produktdetaljer</span> <i class="fas fa-plus"></i></li>
-              <li><span>Størrelsestabell</span> <i class="fas fa-plus"></i></li>
-              <li><span>Anmeldelser</span> 32</li>
-            </ul>
+            <details class="product-details">
+              <summary>Materiale og vedlikehold</summary>
+              <p>Dette produktet er laget av 100% bomull. Vaskes på 40 grader.</p>
+              <img src="img/material-care.jpg" alt="Materiale og vedlikehold bilde">
+            </details>
+          
+            <details class="product-details">
+              <summary>Produktdetaljer</summary>
+              <p>Dette produktet inkluderer unike egenskaper som gjør det slitesterkt og stilig.</p>
+              <video controls>
+                <source src="video/product-details.mp4" type="video/mp4">
+                Din nettleser støtter ikke videofilen.
+              </video>
+            </details>
+          
+            <details class="product-details">
+              <summary>Størrelsestabell</summary>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Størrelse</th>
+                    <th>Bryst (cm)</th>
+                    <th>Midje (cm)</th>
+                    <th>Lengde (cm)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>S</td>
+                    <td>90</td>
+                    <td>75</td>
+                    <td>70</td>
+                  </tr>
+                  <tr>
+                    <td>M</td>
+                    <td>100</td>
+                    <td>85</td>
+                    <td>76</td>
+                  </tr>
+                  <tr>
+                    <td>L</td>
+                    <td>110</td>
+                    <td>90</td>
+                    <td>80</td>
+                  </tr>
+                </tbody>
+              </table>
+            </details>
+          
+            <details class="product-details">
+              <summary>Anmeldelser</summary>
+              <p>Gjennomsnittlig vurdering: ★★★★☆ (4/5 basert på 32 anmeldelser)</p>
+              <ul>
+                <li>"Et helt Fantastisk produkt!" - Sofie</li>
+                <li>"Meget bra kvalitet, anbefales i det sterkeste" - Ole Brum</li>
+                <li>"Ganske så dyrt, men verdt pengene." - Sebastian</li>
+              </ul>
+            </details>
+          </section>
           </section>
         </section>
       </section>
@@ -146,36 +199,39 @@
     </main>
 
 
-  <footer class="container">
-    <div class="footer-container">
-      <div class="footer-logo">
-        <h2>Logo</h2>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-      </div>
-      <div class="footer-contact">
-        <h3>KONTAKT</h3>
-        <p><i class="fas fa-map-marker-alt"></i> <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
-        <p><i class="fas fa-phone"></i> <strong>Telefon:</strong> 69 60 80 00</p>
-        <p><i class="fas fa-envelope"></i> <strong>E-post:</strong> halden@hiof.no</p>
-        <p><i class="fas fa-clock"></i> <strong>Åpningstider:</strong> Stenger 15:00</p>
-      </div>
-      <div class="footer-links">
-        <h3>SNARVEIER</h3>
-        <ul>
-          <li><a href="#">Produkter</a></li>
-          <li><a href="#">Kategorier</a></li>
-          <li><a href="#">Kontakt oss</a></li>
-        </ul>
-      </div>
-      <div class="footer-social">
-        <h3>SOSIALE MEDIER</h3>
-        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.pinterest.com"><i class="fab fa-pinterest-p"></i></a>
-      </div>
-    </div>
-  </footer>
+    <footer id="footer" class="container">
+      <section class="footer-top">
+        <div class="footer-logo">
+          <h2>Logo</h2>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+        </div>
+      </section>
+    
+      <section class="footer-bottom">
+        <div class="footer-contact">
+          <h3>KONTAKT</h3>
+          <p><i class="fas fa-map-marker-alt"></i> <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+          <p><i class="fas fa-phone"></i> <strong>Telefon:</strong> 69 60 80 00</p>
+          <p><i class="fas fa-envelope"></i> <strong>E-post:</strong> halden@hiof.no</p>
+          <p><i class="fas fa-clock"></i> <strong>Åpningstider:</strong> Stenger 15:00</p>
+        </div>
+        <div class="footer-links">
+          <h3>SNARVEIER</h3>
+          <ul>
+            <li><a href="#">Produkter</a></li>
+            <li><a href="#">Kategorier</a></li>
+            <li><a href="#">Kontakt oss</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>SOSIALE MEDIER</h3>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </section>
+    </footer>
   
 </body>
 </html>

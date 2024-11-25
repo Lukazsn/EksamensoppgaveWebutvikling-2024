@@ -46,6 +46,16 @@
       <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
       <a href="#" class="slider-button">LES MER</a>
     </div>
+    <div class="slider-frame" style="background-image: url('img/480-1200x800.jpg');">
+      <h1>Et harum quidem rerum facilis est et expedita distinctio.</h1>
+      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
+      <a href="#" class="slider-button">LES MER</a>
+    </div>
+    <div class="slider-frame" style="background-image: url('img/1037-1200x800.jpg');">
+      <h1>Et harum quidem rerum facilis est et expedita distinctio.</h1>
+      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
+      <a href="#" class="slider-button">LES MER</a>
+    </div>
     <button class="slider-prev">&larr;</button>
     <button class="slider-next">&rarr;</button>
   </section>
@@ -67,55 +77,55 @@
         <img src="img/test.jpg" alt="Product Image">
         <h3>Product name</h3>
         <p>Kr 1999</p>
-        <div class="reviews">
+        <section class="reviews">
           <span>⭐️⭐️⭐️⭐️☆</span>
           <span>842 Reviews</span>
-        </div>
+        </section>
       </article>
       <article class="product-card">
         <img src="img/test.jpg" alt="Product Image">
         <h3>Product name</h3>
         <p>Kr 1999</p>
-        <div class="reviews">
+        <section class="reviews">
           <span>⭐️⭐️⭐️⭐️☆</span>
           <span>842 Reviews</span>
-        </div>
+        </section>
       </article>
       <article class="product-card">
         <img src="img/test.jpg" alt="Product Image">
         <h3>Product name</h3>
         <p>Kr 1999</p>
-        <div class="reviews">
+        <section class="reviews">
           <span>⭐️⭐️⭐️⭐️☆</span>
           <span>842 Reviews</span>
-        </div>
+        </section>
       </article>
       <article class="product-card">
         <img src="img/test.jpg" alt="Product Image">
         <h3>Product name</h3>
         <p>Kr 1999</p>
-        <div class="reviews">
+        <section class="reviews">
           <span>⭐️⭐️⭐️⭐️☆</span>
           <span>842 Reviews</span>
-        </div>
+        </section>
       </article>
       <article class="product-card">
         <img src="img/test.jpg" alt="Product Image">
         <h3>Product name</h3>
         <p>Kr 1999</p>
-        <div class="reviews">
+        <section class="reviews">
           <span>⭐️⭐️⭐️⭐️☆</span>
           <span>842 Reviews</span>
-        </div>
+        </section>
       </article>
       <article class="product-card">
         <img src="img/test.jpg" alt="Product Image">
         <h3>Product name</h3>
         <p>Kr 1999</p>
-        <div class="reviews">
+        <section class="reviews">
           <span>⭐️⭐️⭐️⭐️☆</span>
           <span>842 Reviews</span>
-        </div>
+        </section>
       </article>
     </section>
 
@@ -192,11 +202,14 @@
 
   
   <footer id="footer" class="container">
-    <div class="footer-container">
+    <section class="footer-top">
       <div class="footer-logo">
         <h2>Logo</h2>
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
       </div>
+    </section>
+  
+    <section class="footer-bottom">
       <div class="footer-contact">
         <h3>KONTAKT</h3>
         <p><i class="fas fa-map-marker-alt"></i> <strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
@@ -219,35 +232,40 @@
         <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://www.pinterest.com"><i class="fab fa-pinterest-p"></i></a>
       </div>
-    </div>
+    </section>
   </footer>
   
-  
+  /* Her hjalp copilot meg med å lage en slider som bytter */
   <script>
-    const frames = document.querySelectorAll('.slider-frame');
-    const prevBtn = document.querySelector('.slider-prev');
-    const nextBtn = document.querySelector('.slider-next');
-    let current = 0;
-  
-    function showSlide(index) {
-      frames.forEach((frame, i) => {
-        frame.classList.toggle('active', i === index);
-      });
+  const frames = document.querySelectorAll('.slider-frame');
+const prevBtn = document.querySelector('.slider-prev');
+const nextBtn = document.querySelector('.slider-next');
+let current = 0;
+
+
+function showSlide(index) {
+  frames.forEach((frame, i) => {
+    frame.classList.remove('active'); 
+    if (i === index) {
+      frame.classList.add('active'); 
     }
-  
-    prevBtn.addEventListener('click', () => {
-      current = (current - 1 + frames.length) % frames.length;
-      showSlide(current);
-    });
-  
-    nextBtn.addEventListener('click', () => {
-      current = (current + 1) % frames.length;
-      showSlide(current);
-    });
-  
-    
-    showSlide(current);
-  </script>
+  });
+}
+
+
+prevBtn.addEventListener('click', () => {
+  current = (current - 1 + frames.length) % frames.length; 
+  showSlide(current);
+});
+
+nextBtn.addEventListener('click', () => {
+  current = (current + 1) % frames.length; 
+  showSlide(current);
+});
+
+
+showSlide(current);
+</script>
   
 
 
