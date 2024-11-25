@@ -110,7 +110,7 @@ header {
 }
 
 
-
+/* her hjalp copilot litt med å lage banner riktig */
 .banner {
   height: 60vh;
   display: flex;
@@ -236,6 +236,7 @@ header {
   font-weight: bold;
 }
 
+/* copilot også litt for å lage slides riktig med riktig plassering */
 .slider-prev, .slider-next {
   position: absolute;
   top: 50%;
@@ -622,8 +623,9 @@ details {
   cursor: pointer;
 }
 
+/* noen av disse detaljene hjalp copilot med å lage ferdig sånn at det ble ganske effektivt og fint */
 details[open] {
-  background: #e9e9e9; /* Change color when expanded */
+  background: #e9e9e9;
 }
 
 summary {
@@ -634,7 +636,7 @@ summary {
 }
 
 summary::-webkit-details-marker {
-  color: #007bff; /* Customize the marker arrow */
+  color: #007bff;
 }
 
 details p, details img, details video, details table, details ul {
@@ -1056,11 +1058,6 @@ h1 {
   display: block; 
  
   }
-
-
-
-
-
 
 
 
