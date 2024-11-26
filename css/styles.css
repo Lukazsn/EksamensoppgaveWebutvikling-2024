@@ -1293,7 +1293,7 @@ h1 {
     }
 
     .banner h1 {
-      font-size: 18px;
+      font-size: clamp(1em, 3vw, 1.2em);
       margin-left: 0;
       text-align: center; 
       max-width: 90%; 
